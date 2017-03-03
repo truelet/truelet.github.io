@@ -8,8 +8,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="keywords" content="truelet" />
-		<script type="application/x-javascript"> //addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-			<script src="js/jquery.min.js"></script>
+		<!-- <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+			<script src="js/jquery.min.js"></script> -->
 			<script>
 				/*$(document).ready(function(c) {
 					$('.alert-close').on('click', function(c){
@@ -21,21 +21,21 @@
 			</script>
 </head>
 <body>
-	<h1>Trurlet</h1>
+	<h1>Truelet</h1>
 	<div class="main-agile">
 		<!-- <div class="alert-close"> </div> -->
 		<div class="content-wthree">
 			<img src="images/send-symbol.png" alt="image">
 			<h2>Subscribe</h2>
 			<i class="fa fa-envelope" aria-hidden="true"></i>
-			<form action="#" method="post">
-				<input type="text"  class="email" name="eamil" placeholder="Enter Your Email" required="">
+			<form action="email.php" method="post" onsubmit="alert('Thank you subscribe to our newsletter.')">
+				<input type="email"  class="email" name="email" placeholder="Enter Your Email" required="">
 				<input type="submit" value="Subscribe">
 			</form>
 		</div>
 	</div>
 	<div class="footer-w3l">
-		<p class="agileinfo"> &copy; 2017 Trurlet</p>
+		<p class="agileinfo"> &copy; 2017 Truelet</p>
 	</div>
 </body>
 </html>
