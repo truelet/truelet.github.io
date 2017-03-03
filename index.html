@@ -5,20 +5,33 @@
 	<link href="css/style.css" rel='stylesheet' type='text/css'/>
 	<!-- <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> -->
 
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta name="keywords" content="truelet" />
-		<!-- <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-			<script src="js/jquery.min.js"></script> -->
-			<script>
-				/*$(document).ready(function(c) {
-					$('.alert-close').on('click', function(c){
-						$('.main-agile').fadeOut('slow', function(c){
-							$('.main-agile').remove();
-						});
-					});	  
-				});*/
-			</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="truelet" />
+	<!-- <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script> -->
+	<!-- <script src="js/jquery.min.js"></script> -->
+	<script>
+		// $(document).ready(function(c) {
+		// 	$("#subcribeForm").submit(function(e){
+		//         e.preventDefault();
+		//         var formid = this;
+		//         var email = $("#email").val();
+		//         var form_data = {to : "Truelet <truelet.info@gmail.com>", from : 'Test <postmaster@sandboxd4b13d58a6724430a327a2a38ca6508b.mailgun.org>', subject : "New subscriber from site", text : "New subscriber : " + email};
+		//         var form_action = "https://api.mailgun.net/v3/sandboxd4b13d58a6724430a327a2a38ca6508b.mailgun.org/messages";
+		//         $.ajax({
+		//           method: "POST",
+		//           url: form_action,
+		//           data: form_data,
+		//           dataType: "json",
+		//           crossDomain: true
+		//         }).success(function(response){
+		//             console.log(response);           
+		//         }).error(function(err){
+		//             console.log(err);
+		//         });
+		//     });
+		// });
+	</script>
 </head>
 <body>
 	<h1>Truelet</h1>
@@ -28,8 +41,8 @@
 			<img src="images/send-symbol.png" alt="image">
 			<h2>Subscribe</h2>
 			<i class="fa fa-envelope" aria-hidden="true"></i>
-			<form action="email.php" method="post" onsubmit="alert('Thank you subscribe to our newsletter.')">
-				<input type="email"  class="email" name="email" placeholder="Enter Your Email" required="">
+			<form action="" method="post" id="subcribeForm" onsubmit="alert('Thank you for subscribe.')">
+				<input type="email"  class="email" name="email" id="email" placeholder="Enter Your Email" required="">
 				<input type="submit" value="Subscribe">
 			</form>
 		</div>
